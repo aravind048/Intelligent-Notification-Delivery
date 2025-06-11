@@ -1,0 +1,24 @@
+# Core framework
+fastapi
+uvicorn
+
+# Database
+sqlalchemy
+pydantic
+
+# JWT Auth
+python-jose[cryptography]
+passlib[bcrypt]
+
+# Data Processing
+pandas
+
+# Background Jobs
+celery
+redis
+
+# Optional: for parsing CSV uploads
+python-multipart
+
+# For environment/config management
+python-dotenv
