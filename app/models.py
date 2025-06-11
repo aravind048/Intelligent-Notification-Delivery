@@ -33,7 +33,7 @@ class ActivityLog(Base):
     id = Column(Integer, primary_key=True, index=True)
     user_id = Column(Integer, ForeignKey("users.id"))
     event_type = Column(String(50), nullable=False)
-    metadata = Column(Text)  # optional raw JSON/text
+    event_metadata = Column(Text)  # optional raw JSON/text
     timestamp = Column(DateTime(timezone=True), server_default=func.now())
 
     user = relationship("User", back_populates="logs")
